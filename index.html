@@ -3,106 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doxed Kids</title>
-    <link rel="icon" href="https://th.bing.com/th/id/R.d13d028b28582cc845002a4b08df937b?rik=sbyCTAP1k%2fIcpg&pid=ImgRaw&r=0&sres=1&sresct=1" type="image/x-icon">
+    <title>Exciting Content Coming Soon</title>
     <style>
-        /* Reset default styles */
-        *,
-        *::before,
-        *::after {
+        /* Reset default margin and padding */
+        body, h1, p {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
+        /* Base styles */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            position: relative;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
+            background-color: #1a1a1a;
+            color: #ff6666;
             text-align: center;
-            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            background-color: #2a2a2a;
+            border: 2px solid #ff6666;
+            border-radius: 10px;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-            position: relative;
+            max-width: 600px;
         }
 
-        .lawsuit-description img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-        }
-
-        .secret-button {
-            display: none;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 8px 12px;
-            font-size: 14px;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Other styles for improved visuals */
         h1 {
-            font-size: 36px;
+            font-size: 2.5rem;
+            font-weight: bold;
             margin-bottom: 20px;
         }
 
         p {
-            font-size: 16px;
+            font-size: 1.125rem;
             line-height: 1.6;
+        }
+
+        .attention-text {
+            color: #ff6666;
+            font-weight: bold;
+        }
+
+        .attention-icon {
+            font-size: 3rem;
             margin-bottom: 20px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Doxed Kids</h1>
-    </header>
-
     <div class="container">
-        <div class="lawsuit-description" onclick="showButton()">
-            <img src="grave.png?width=480&height=331" alt="Doxed Kids Image">
-        </div>
-       <p>
-        <p>
-            Ever since I was a kid, I've had a fascination with the internet and its capabilities, particularly in the realm of games. When I ventured into creating my website, it thrived, becoming a platform for like-minded individuals. However, our success was short-lived due to unexpected legal entanglements. Despite emerging victorious in our initial lawsuit, another legal battle blindsided us, throwing our operations into disarray. The repercussions were immense; our financial stability crumbled, and the stress of ongoing litigation weighed heavily on the team. It was a turbulent time, grappling with uncertainty and mounting pressures.
-        </p>
-        <p>
-            Our attempts to navigate through these legal complexities were exhaustive, yet the situation persisted, posing profound challenges to our existence. The toll was significant, both emotionally and financially. The internet, once a realm of boundless possibilities, became a battleground fraught with obstacles. This ordeal underscored the intricacies and risks of operating in the digital sphere. In the face of adversity, I've made the difficult decision to temporarily halt our operations, to regroup, reassess, and consider our options moving forward.
-        </p>
-            Despite the hardships, this experience has been enlightening, emphasizing the importance of responsible online engagement and the need for vigilance in navigating legal frameworks. As this chapter draws to a close, I remain optimistic about the future, hoping to return stronger and more resilient.
-        </p>
-        
-
-        <button class="secret-button" id="secretButton" onclick="window.location.href='https://doxed2kids.isthatyoungsuke.repl.co/'">Doxed Kids 2</button>
+        <div class="attention-icon" aria-hidden="true">&#128520;</div>
+        <h1>May 8th 😈</h1>
+        <p class="attention-text">We're working on something amazing for you...</p>
+        <p>Stay tuned for our fantastic content!</p>
     </div>
-
-    <script>
-        function showButton() {
-            var button = document.getElementById("secretButton");
-            button.style.display = "block";
-        }
-    </script>
 </body>
 </html>
